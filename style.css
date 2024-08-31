@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section1{
+    background-image: url('images/hero-bg-2.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    height: 100vh;
+
+
+   
+}
+.section1 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section1 .container .left{
+    z-index: 1000;
+ 
+}
+.section1 .container .right{
+    z-index: 1000;
+    position: relative;
+    top: 50px;
+ 
+}
+.section1 .container .right .spa1{
+    font-size: 45px;
+    color: #9c9898;
+
+}
+.section1 .container .right .spa2{
+    
+    font-size: 45px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+.section1 .container .right .fris{
+    margin-bottom: 20px;
+
+}
+.section1 .container .right  .und{
+    height: 4px;
+    width: 230px;
+    position: relative;
+    left: 220px;
+    background-color:#1acc8d;
+}
+.section1 .container .right p{
+    color: #9c9898;
+    font-size: 27px;
+    margin-bottom: 20px;
+
+}
+.section1 .container .right button{
+    padding: 10px 30px;
+    background-color:#1acc8d ;
+    border: 1px solid #1acc8d;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: white;
+}
+.section1 .container .right i{
+    color: #1acc8d;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+.section1 .container .right .spa3{
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+.above{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(14, 0, 145, 0.9);
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: 50px;
+    }
+    50% {
+        top: 20px; /* Move up */
+    }
+    100% {
+        top: 50px; /* Move back to the original position */
+    }
+}
+
+/* Apply the animation to the image */
+.section1 .container .left img {
+    width: 70%;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    animation: moveUpDown 4s infinite ease-in-out; /* 2s duration, infinite loop */
+}
+
+
+.section2{
+    margin-top: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.section2 .rightside{
+    position: relative;
+    top: 60px;
+
+}
+.section2 .rightside span{
+    background-color: #ebf7f2;
+    padding: 10px;
+    border: 1px solid #ebf7f2;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 10px;
+    color: #1acc8d;
+
+}
+.section2 .rightside h3{
+    color: #040677;
+    font-size: 30px;
+
+}
+.section2 .rightside p{
+    margin-bottom: 30px;
+}
+.section2 .rightside .spaa{
+    padding: 10px 40px;
+    background-color: #1acc8d;
+    color: white;
+
+}
+.section2 .rightside .bi-arrow-right {
+    position: relative;
+
+    color: white;
+    transition: right 2s ease; /* Smooth transition for movement */
+}
+
+.section2 .rightside .spaa:hover .bi-arrow-right {
+    left: 25px; /* Move the arrow to the right on hover */
+}
+.leftside{
+    position: relative;
+    left: 30px;
+}
+
+.leftside .row .col-6 {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    border: 1px solid #ebf7f2;
+    border-radius: 4px; 
+    width: 45%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    height: 300px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.leftside .row .two{
+    position: relative;
+    bottom: 40px;
+}
+.leftside .row .four{
+    position: relative;
+    bottom: 40px;
+}
+.leftside .row .col-6 .icon{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #ccece1;
+    margin-bottom: 30px;
+    transition: background-color 0.5s ease;
+}
+.leftside .row .col-6 i{
+    font-size: 35px;
+    position: relative;
+    left: 19px;
+    top: 10px;
+    color: #1acc8d;
+    transition: color 0.5s ease;
+    
+}
+.leftside .row .col-6 h3{
+    color: #040677;
+
+}
+.leftside .row .col-6:hover .icon{
+    background-color: #1acc8d;
+    
+}
+.leftside .row .col-6:hover i{
+    color: white;
+}
+
+
